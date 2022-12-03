@@ -1,0 +1,20 @@
+-- breakFast mizan  100101  
+-- breakFast spoon  100102
+-- breakFast cup  100103
+
+-- lanch  mizan  100201
+-- lanch  spoon  100202
+-- lanch  cup    100203
+
+-- dinner mizan  100301
+-- dinner spoom  100302
+-- dinner cup  100303
+
+-- snak mizan  100401
+-- snak spoom  100402
+-- snak cup    100403
+
+mizan  1
+spoon  2
+cup  3
+

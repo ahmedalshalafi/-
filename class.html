@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+        <link  rel="stylesheet" type="text/css" href="CssClass.css">
+		<meta charset="utf-8">
+    </header>
+     
+    <body style="background-color: #a6885b">
+
+     
+         <ul class="cards">
+           
+        <li>
+         
+            <div class="card" style="background-color: skyblue;text-align: center; color: indigo;  font-weight: bold;">
+                <h2 class="card_header" >سناك</h2>
+                <a class="card">
+                   
+                    <img src="img/snacks.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                       
+                        <button style="background-color: transparent;border-radius: 50%;border-color: transparent;padding: 0em;"
+                        onclick="show()" id="btnID"
+                        >
+                            <img class="card__thumb" src="img/miz.png" alt="ميزان"  ></img>
+                        </img></button>
+              
+                            <img class="card__thumb" src="img/spoon.png" alt="ملعقة"  onclick="spoonvent1()"></img>
+                        </img>
+                        <button style="background-color: transparent;border-radius: 50%;border-color: transparent; ">
+                            <img class="card__thumb" src="img/cup.png" alt="كوب" >
+                        </img></button>
+                       <!--<div class="card__header-text">
+                          <h3 class="card__title">Jessica Parker</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>--> 
+                      </div>
+                      <p class="card__description">food</p>
+                    </div>
+                  </a>    
+            </div>
+            
+        </li>
+        <li>
+            <div class="card" style="background-color: skyblue;text-align: center; color: indigo;  font-weight: bold;">
+                <h2 class="card_header" >عشاء</h2>
+                <a  class="card">                    
+                    <img src="img/dinner.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">        
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                        <img class="card__thumb" src="img/miz.png" alt="ميزان"  ></img>
+                      
+                          <img class="card__thumb" src="img/spoon.png" alt="ملعقة"  onclick="spoonvent()"></img>
+                      </img>
+                        <img class="card__thumb" src="img/cup.png" alt="كوب"  ></img>
+                       <!--<div class="card__header-text">
+                          <h3 class="card__title">kim Cattrall</h3>
+                          <span class="card__status">3 hours ago</span>
+                        </div>--> 
+                      </div>
+                      <p class="card__description">food</p>
+                    </div>
+                  </a>
+            </div>
+          
+        </li>
+        <li>
+            <div class="card" style="background-color: skyblue;text-align: center; color: indigo;  font-weight: bold;">
+                <h2 class="card_header" >الغداء</h2>
+                <a  class="card">
+            
+                    <img src="img/lunch.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                        <img class="card__thumb" src="img/miz.png" alt="ميزان"  ></img>
+                        <img class="card__thumb" src="img/spoon.png" alt="ملعقة"  onclick="spoonvent()"></img>
+                        <img class="card__thumb" src="img/cup.png" alt="كوب"  ></img>
+                        <!--<div class="card__header-text">
+                          <h3 class="card__title">Jessica Parker</h3>
+                          <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>            
+                          <span class="card__status">1 hour ago</span>
+                        </div> -->
+                      </div>
+                      <p class="card__description">food</p>
+                    </div>
+                  </a>
+            </div>
+
+         
+        </li>
+        <li>
+            <div class="card" style="background-color: skyblue;text-align: center; color: indigo;  font-weight: bold;">
+                <h2 class="card_header" >فطور</h2>
+                <a class="card">              
+                    <img src="img/breakfast-board.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg" ><path  /></svg>                 
+                          <button 
+                            id="hamzabtn"
+                             >
+                              <img class="card__thumb" src="img/miz.png" alt="ميزان"  id="image"></img>
+                              </img>
+                          </button>
+                          <img class="card__thumb" src="img/spoon.png" alt="ملعقة" onclick="spoonvent()" ></img>
+                          <img class="card__thumb" src="img/cup.png" alt="كوب"  onclick="cupevent()"></img>
+                         <!-- <div class="card__header-text">
+                            <h3 class="card__title">kim Cattrall ha</h3>
+                            <span class="card__status">3 hours ago</span>
+                          </div> -->          
+                        </div>
+                        <p class="card__description">food</p>
+                      </div>
+                      
+                    </a></div>
+
+          
+        </li>    
+      </ul>
+      
+      
+      
+      <!-- ****************************    -->
+      <div id="myModal" class="modal">
+
+        <div class="modal-content" >
+         <div class="modal-header" >
+            <h2>حساب المزان</h2>
+          </div>
+        
+          <div class="modal-body" >
+      
+            <form action="method" name="form4">
+              <div>
+                <p> number of account </p>
+                <input type="text" name="command">
+                <p> number of account1 </p>
+                <input type="text" name="command1">
+              </div>
+                
+        
+         
+             <p> password </p>
+            <input type="password" name="password2">
+          </div>
+          <div class="modal-footer">
+            <h3>clos the window <span class="close">Close</span></h3>
+          </div>
+        </div>
+      </div>
+      <!--  java script  **************************************-->
+      <script type="text/javascript">
+        function show() {
+ 
+          modal.style.display = "block";
+        }
+       
+        function mizanvent() 
+        {
+          modal.style.display = "block";
+            //alert("hello hamza");
+        }
+        function spoonvent() 
+        {
+ 
+          modal.style.display = "block";
+        }
+        function spoonvent1() 
+        {
+ 
+          modal.style.display = "block";
+        }
+        // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+//var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+function cupevent() 
+        {
+          modal.style.display = "block";
+          
+        }
+// When the user clicks on the button, open the modal 
+//btn.onclick = function() {
+   // modal.style.display = "block";
+//}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+/*window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}*/
+        
+    </script>
+    </body>
+   
+</html>
